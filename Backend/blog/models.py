@@ -8,6 +8,7 @@ class Category(models.Model):
 	def __str__(self):
 		return self.name
 
+
 class Post(models.Model):
 
 	class PostObjects(models.Manager):
@@ -19,6 +20,7 @@ class Post(models.Model):
 		('published', 'Published'),
 	)
 
+ # campos
 	category = models.ForeignKey(Category, on_delete=models.PROTECT, default=1)
 	title = models.CharField(max_length=255)
 	excerpt = models.TextField(null=True)
