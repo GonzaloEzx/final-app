@@ -1,1 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}APP-FINAL blog home page{% endblock title %}
+{% block content %}
 Blog HomePage
+
+{% for post in posts %}
+<!-- declaramos urls en django -->
+<a href="{% url 'blog:post-detail' slug=post.slug %}"> <!--quese_yo2/'blog:post-detail'???-->
+{{ post.title }}
+{{ post.excerpt|truncatechars:50}}
+</a>
+{% endfor %}
+
+{% endblock content %}

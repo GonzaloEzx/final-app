@@ -1,5 +1,6 @@
 {
 	"recommendations": [
-		"batisteo.vscode-django"
+		"batisteo.vscode-django",
+		"thebarkman.vscode-djaneiro"
 	]
 }

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+Post Detail View
+{{post.title}}
+{{post.content|truncatechars:50}}
+{% endblock content %}
