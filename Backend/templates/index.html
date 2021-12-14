@@ -1,5 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}APP-FINAL HomePage{% endblock title %}
 {% block content %}
-home page app final asd asdasdasd
+<a href={% url 'home' %}>
+Home page
+</a>
+<a href={% url 'blog:home' %}>
+Blog
+</a>
+
 {% endblock content %}
