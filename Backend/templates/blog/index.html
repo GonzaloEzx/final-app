@@ -5,7 +5,7 @@ Blog HomePage
 
 {% for post in posts %}
 <!-- declaramos urls en django -->
-<a href="{% url 'blog:post-detail' slug=post.slug %}"> <!--quese_yo2/'blog:post-detail'???-->
+{% comment %} <a href="{% url 'blog:post-detail' slug=post.slug %}"> <!--quese_yo2/'blog:post-detail'???--> {% endcomment %}
 {{ post.title }}
 {{ post.excerpt|truncatechars:50}}
 </a>
