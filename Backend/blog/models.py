@@ -32,6 +32,7 @@ class Post(models.Model):
 	objects = models.Manager() 
 	postobjects = PostObjects()
 
+
 	class Meta:
 		ordering = ('-published',)
 	
